@@ -1,1 +1,36 @@
-<p>sidebar works!</p>
+<div class="nav-container">
+
+    <mat-toolbar color="primary">  
+        <button mat-icon-button (click)="snav.toggle()" aria-label="icon-button with a menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <h1 class="app-name">{{ navbarText }}</h1>
+    </mat-toolbar>
+
+    <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav #snav>
+          <mat-nav-list>
+            <!-- <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a> -->
+
+            <mat-accordion multi="true">
+                <mat-expansion-panel *ngFor="let nav of fillerNav">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            {{ nav.label }}
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <a mat-list-item routerLink="." *ngFor="let i of nav.contents">{{ i.label }}</a>
+                </mat-expansion-panel>
+            </mat-accordion>
+          </mat-nav-list>
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+          <!-- <p *ngFor="let content of fillerContent">{{content}}</p> -->
+          <div class="content" role="main">
+            <router-outlet></router-outlet>
+          </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
