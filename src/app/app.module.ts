@@ -14,6 +14,11 @@ import { MaterialModule } from './shared/material.module';
 
 import { HttpClientModule } from '@angular/common/http';
 
+// for local data
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
+import { InMemoryDataListService } from './in-memory-datalist.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +28,12 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    ),
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataListService, { dataEncapsulation: false }
+    ),
     AppRoutingModule,
     MaterialModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
