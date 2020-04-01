@@ -15,7 +15,7 @@ import { HeroService } from '../../data.services';
 export class SidebarComponent implements OnInit, OnDestroy {
     heroes: Hero[];
     panelOpenState = true;
-    navbarText = "Placeholder Text";
+    navbarText = "";
     mobileQuery: MediaQueryList;
     /*fillerNav = [
         {
