@@ -1,5 +1,5 @@
 {
-  "name": "offline-app",
+  "name": "Training Module",
   "version": "0.1.2",
   "scripts": {
     "ng": "ng",
@@ -16,12 +16,12 @@
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "~0.900.6",
-    "@angular/cli": "~9.0.6",
-    "@angular/compiler-cli": "~9.0.6",
     "@angular/animations": "~9.0.6",
     "@angular/cdk": "^9.1.3",
+    "@angular/cli": "~9.0.6",
     "@angular/common": "~9.0.6",
     "@angular/compiler": "~9.0.6",
+    "@angular/compiler-cli": "~9.0.6",
     "@angular/core": "~9.0.6",
     "@angular/forms": "~9.0.6",
     "@angular/material": "^9.1.3",
@@ -29,11 +29,12 @@
     "@angular/platform-browser-dynamic": "~9.0.6",
     "@angular/router": "~9.0.6",
     "@angular/service-worker": "~9.0.6",
+    "@ngmodule/material-carousel": "^0.6.0",
     "angular-in-memory-web-api": "^0.10.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2",
-    "typescript": "~3.7.5"
+    "typescript": "~3.7.5",
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular/language-service": "~9.0.6",

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
 
 @Component({
-  selector: 'app-mainview',
-  templateUrl: './mainview.component.html',
-  styleUrls: ['./mainview.component.css']
+  selector: 'app-mainvideo',
+  templateUrl: './mainvideo.component.html',
+  styleUrls: ['./mainvideo.component.css']
 })
-export class MainviewComponent implements OnInit {
+export class MainVideoComponent implements OnInit {
 
     public slides = [
         { 'image': './assets/img/brochures/1/1.png' },

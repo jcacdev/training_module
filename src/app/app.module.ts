@@ -14,6 +14,8 @@ import { MaterialModule } from './shared/material.module';
 
 import { HttpClientModule } from '@angular/common/http';
 
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+
 // for local data
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
@@ -36,6 +38,7 @@ import { InMemoryDataListService } from './in-memory-datalist.service';
     ),
     AppRoutingModule,
     MaterialModule,
+    MatCarouselModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule
   ],

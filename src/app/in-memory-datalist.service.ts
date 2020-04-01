@@ -11,27 +11,26 @@ export class InMemoryDataListService implements InMemoryDbService {
         const list = [
             {
                 "id": 1,
-                "label": "Group 1",
+                "label": "SCB",
                 "contents": [
-                    { "id": 4, "label": "Item 1-1" },
-                    { "id": 5, "label": "Item 1-2" }
-                ]
-            },
-            {
-                "id": 2,
-                "label": "Group 2",
-                "contents": [
-                    { "id": 6, "label": "Item 2-1" },
-                    { "id": 7, "label": "Item 2-2" },
-                    { "id": 8, "label": "Item 2-3" }
-                ]
-            },
-            {
-                "id": 3,
-                "label": "Group 3",
-                "contents": [
-                    { "id": 9, "label": "Item 3-1" },
-                    { "id": 10, "label": "Item 3-2" }
+                    {
+                        "id": 11, "label": "Brochures", "contents": [
+                            { "id": 111, "label": "Automotive Range" },
+                            { "id": 112, "label": "Dual Purpose Range" },
+                            { "id": 113, "label": "Golf Cart Range" },
+                            { "id": 114, "label": "Lawncare Range" },
+                            { "id": 115, "label": "Marine Range" },
+                            { "id": 116, "label": "Start-Stop Range" },
+                            { "id": 117, "label": "Truck Range" },
+                            { "id": 118, "label": "Gladiator Range" }
+                        ]
+                    },
+                    {
+                        "id": 12, "label": "Videos", "contents": [
+                            { "id": 121, "label": "Supercharge M1 R5" },
+                            { "id": 122, "label": "Supercharge M2" }
+                        ]
+                    }
                 ]
             }
         ];
