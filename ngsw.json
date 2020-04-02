@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1585807659848,
+  "timestamp": 1585867051867,
   "index": "https://scbau.github.io/training_module/index.html",
   "assetGroups": [
     {
@@ -10,14 +10,14 @@
       "urls": [
         "https://scbau.github.io/training_module/favicon.ico",
         "https://scbau.github.io/training_module/index.html",
-        "https://scbau.github.io/training_module/main-es2015.76734872e62a4bc2041a.js",
-        "https://scbau.github.io/training_module/main-es5.76734872e62a4bc2041a.js",
+        "https://scbau.github.io/training_module/main-es2015.853bc46154f1085bd4c7.js",
+        "https://scbau.github.io/training_module/main-es5.853bc46154f1085bd4c7.js",
         "https://scbau.github.io/training_module/manifest.webmanifest",
         "https://scbau.github.io/training_module/polyfills-es2015.1f913f16a2d346cc8bdc.js",
         "https://scbau.github.io/training_module/polyfills-es5.1a3c78b07cd6f16c6e9a.js",
         "https://scbau.github.io/training_module/runtime-es2015.0811dcefd377500b5b1a.js",
         "https://scbau.github.io/training_module/runtime-es5.0811dcefd377500b5b1a.js",
-        "https://scbau.github.io/training_module/styles.914ca865bba1192d817a.css"
+        "https://scbau.github.io/training_module/styles.4428665717e57edc230a.css"
       ],
       "patterns": []
     },
@@ -67,15 +67,15 @@
     "https://scbau.github.io/training_module/assets/img/icons/menu.svg": "b83b1b0f15b50524f4c7f532b3553bf103bdc14c",
     "https://scbau.github.io/training_module/assets/pdf/sc-auto-range.pdf": "6ec8f2a2c07a15130a19a03a2016eedeb04c3a14",
     "https://scbau.github.io/training_module/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://scbau.github.io/training_module/index.html": "cd8737ee60b764d80de0648337746e9ceb07b9ac",
-    "https://scbau.github.io/training_module/main-es2015.76734872e62a4bc2041a.js": "1cb466b16c5526d21428517cb9e97f3d83807a23",
-    "https://scbau.github.io/training_module/main-es5.76734872e62a4bc2041a.js": "a426368c85ce1688721f68830180337344696acc",
+    "https://scbau.github.io/training_module/index.html": "75b8d993f119c2a403e4fecbbdd58f45b426822b",
+    "https://scbau.github.io/training_module/main-es2015.853bc46154f1085bd4c7.js": "8a2052213a6a589a92188b5becfe9ecf22e7a6a4",
+    "https://scbau.github.io/training_module/main-es5.853bc46154f1085bd4c7.js": "d4fa2ee58342ac2b8da12e0be6046d0c2984e306",
     "https://scbau.github.io/training_module/manifest.webmanifest": "20669bc42a60f60fbd286b9369f5ed1065f55451",
     "https://scbau.github.io/training_module/polyfills-es2015.1f913f16a2d346cc8bdc.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "https://scbau.github.io/training_module/polyfills-es5.1a3c78b07cd6f16c6e9a.js": "e5472003c8575a8fca7583648df3905038faeb18",
     "https://scbau.github.io/training_module/runtime-es2015.0811dcefd377500b5b1a.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "https://scbau.github.io/training_module/runtime-es5.0811dcefd377500b5b1a.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://scbau.github.io/training_module/styles.914ca865bba1192d817a.css": "67f6e344d6d1a8152e88587120eb7f17861c0323"
+    "https://scbau.github.io/training_module/styles.4428665717e57edc230a.css": "0a5d4206b6f332ea7c0b6345c4cbe8657fcd862e"
   },
   "navigationUrls": [
     {
