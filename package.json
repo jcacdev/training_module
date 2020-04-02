@@ -1,5 +1,5 @@
 {
-  "name": "Training Module",
+  "name": "TrainingModule",
   "version": "0.1.2",
   "scripts": {
     "ng": "ng",
