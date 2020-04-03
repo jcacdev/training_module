@@ -6,9 +6,9 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { NestedTreeControl } from '@angular/cdk/tree';
 import { MatTreeNestedDataSource } from '@angular/material/tree';
 
-import { Hero } from '../../data';
-import { List } from '../../list';
-import { HeroService } from '../../data.services';
+import { Hero } from '../../models/data';
+import { List } from '../../models/list';
+import { HeroService } from '../../services/data/data.services';
 
 
 interface FoodNode {
@@ -25,14 +25,15 @@ const TREE_DATA: FoodNode[] = [
         "children": [
             {
                 "id": 11, "name": "Brochures", "children": [
-                    { "id": 111, "name": "Automotive Range", "route": "."},
-                    { "id": 112, "name": "Dual Purpose Range", "route": "." },
-                    { "id": 113, "name": "Golf Cart Range", "route": "." },
-                    { "id": 114, "name": "Lawncare Range", "route": "." },
-                    { "id": 115, "name": "Marine Range", "route": "." },
-                    { "id": 116, "name": "Start-Stop Range", "route": "." },
-                    { "id": 117, "name": "Truck Range", "route": "." },
-                    { "id": 118, "name": "Gladiator Range", "route": "." }
+                    { "id": 111, "name": "Automotive Range", "route": "/scb/automotive" },
+                    { "id": 112, "name": "Dual Purpose Range", "route": "/scb/dual-purpose" },
+                    { "id": 113, "name": "Golf Cart Range", "route": "/scb/golf-cart" },
+                    { "id": 114, "name": "Lawncare Range", "route": "/scb/lawncare" },
+                    { "id": 115, "name": "Marine Range", "route": "/scb/marine" },
+                    { "id": 116, "name": "Start-Stop Range", "route": "/scb/start-stop" },
+                    { "id": 117, "name": "Truck Range", "route": "/scb/truck" },
+                    { "id": 118, "name": "Gladiator Range", "route": "/scb/gladiator" },
+                    { "id": 119, "name": "AMP-Tech Flooded Deep Cycle Range", "route": "/scb/amp-tech-flooded-deep-cycle" }
                 ]
             },
             {
@@ -47,9 +48,48 @@ const TREE_DATA: FoodNode[] = [
         "id": 2,
         "name": "Exide",
         "children": [
-            { "id": 6, "name": "Item 2-1" },
-            { "id": 7, "name": "Item 2-2" },
-            { "id": 8, "name": "Item 2-3" }
+            {
+                "id": 21, "name": "Brochures", "children": [
+                    { "id": 211, "name": "Evolution Start-Stop Range", "route": "/exide/evolution-start-stop"},
+                    { "id": 212, "name": "Heavy Commercial Range", "route": "/exide/heavy-commercial" },
+                    { "id": 213, "name": "Industrial Cycling Range", "route": "/exide/industrial-cycling" },
+                    { "id": 214, "name": "Marine Stowaway Range", "route": "/exide/marine-stowaway" },
+                    { "id": 215, "name": "Passenger Range", "route": "/exide/passenger" },
+                    { "id": 216, "name": "Powerider Range", "route": "/exide/powerider" },
+                    { "id": 217, "name": "SUV 4WD Light Range", "route": "/exide/suv-4wd-light" },
+                    // { "id": 218, "name": "Gladiator Range", "route": "/scb/gladiator" }
+                ]
+            }/*,
+            {
+                "id": 22, "name": "Videos", "children": [
+                    { "id": 221, "name": "Supercharge M1 R5", "route": "/video" },
+                    { "id": 222, "name": "Supercharge M2", "route": "/video" }
+                ]
+            }*/
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Alco",
+        "children": [
+            {
+                "id": 31, "name": "Brochures", "children": [
+                    { "id": 311, "name": "Automotive Range", "route": "/alco/automotive"},
+                    { "id": 312, "name": "Automotive Alco3000 Range", "route": "/alco/automotive-alco3000" },
+                    { "id": 313, "name": "Dual Purpose Range", "route": "/alco/dual-purpose" },
+                    { "id": 314, "name": "Lawn Mower Range", "route": "/alco/lawn-mower" },
+                    { "id": 315, "name": "Marine Range", "route": "/alco/marine" },
+                    { "id": 316, "name": "Start-Stop Range", "route": "/alco/start-stop" },
+                    { "id": 317, "name": "Truck Range", "route": "/alco/truck" },
+                    // { "id": 218, "name": "Gladiator Range", "route": "/scb/gladiator" }
+                ]
+            }/*,
+            {
+                "id": 22, "name": "Videos", "children": [
+                    { "id": 221, "name": "Supercharge M1 R5", "route": "/video" },
+                    { "id": 222, "name": "Supercharge M2", "route": "/video" }
+                ]
+            }*/
         ]
     }
 ];

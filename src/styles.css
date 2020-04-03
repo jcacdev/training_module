@@ -11,7 +11,7 @@ div.carousel {
     height: 100%!important;
 }
 div.carousel-slide {
-    background-size: 100% 100%!important;
+    background-size: auto 100%!important;
 }
 ul.carousel-list {
     height: 100%!important;

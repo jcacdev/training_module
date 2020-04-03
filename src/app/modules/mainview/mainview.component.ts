@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
+import { ActivatedRoute, Router, NavigationStart } from '@angular/router';
 import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
 
 @Component({
@@ -7,19 +8,27 @@ import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
   styleUrls: ['./mainview.component.css']
 })
 export class MainviewComponent implements OnInit {
+  data;
 
-    public slides = [
-        { 'image': './assets/img/brochures/1/1.png' },
-        { 'image': './assets/img/brochures/1/2.png' },
-        { 'image': './assets/img/brochures/1/3.png' },
-        { 'image': './assets/img/brochures/1/4.png' },
-        { 'image': './assets/img/brochures/1/5.png' },
-        { 'image': './assets/img/brochures/1/6.png' }
-    ]
+  public slides = []
 
-  constructor() { }
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
+
+  ngOnChanges(): void {
+    console.log('asdasdasdasdasdasd');
+  }
 
   ngOnInit(): void {
+    this.activatedRoute.data.subscribe(v => this.data = v);
+    console.log(this.data);
+
+    var x = new Array(this.data.length);
+
+    for (var i = 0; i < this.data.length; i++) {
+      x[i] = { 'image':'./assets/img/brochures/' + this.data.path + '/' + (i+1).toString() + '.png' }
+    }
+
+    this.slides = x;
   }
 
 }

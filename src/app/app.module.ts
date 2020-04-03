@@ -1,5 +1,11 @@
+/*
+ng build --prod --base-href https://scbau.github.io/training_module/
+ngh --dir=dist/offline-app
+*/
+
+
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,8 +24,10 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 // for local data
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './in-memory-data.service';
-import { InMemoryDataListService } from './in-memory-datalist.service';
+import { InMemoryDataService } from './services/in-memory/in-memory-data.service';
+import { InMemoryDataListService } from './services/in-memory/in-memory-datalist.service';
+
+import { PersistenceService } from './services/persistence/persistence.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +50,12 @@ import { InMemoryDataListService } from './in-memory-datalist.service';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [{
+    provide: APP_INITIALIZER,
+    useFactory: (persistenceService: PersistenceService) => () => persistenceService.connect(),
+    deps: [PersistenceService],
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
