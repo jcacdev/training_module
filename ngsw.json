@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1585874306430,
+  "timestamp": 1585875589595,
   "index": "https://scbau.github.io/training_module/index.html",
   "assetGroups": [
     {
@@ -192,7 +192,7 @@
     "https://scbau.github.io/training_module/index.html": "2e50d2e6de2e64a428a75eff58b4a2cb77dd0cd9",
     "https://scbau.github.io/training_module/main-es2015.3e69a52234b5e536c56f.js": "629d6fbb5b7323ef7c0c58de63b81fd37a09cf13",
     "https://scbau.github.io/training_module/main-es5.3e69a52234b5e536c56f.js": "982fc74cdb3ec7df6c9ef5e52f2a81f7a14b26b3",
-    "https://scbau.github.io/training_module/manifest.webmanifest": "20669bc42a60f60fbd286b9369f5ed1065f55451",
+    "https://scbau.github.io/training_module/manifest.webmanifest": "b652bad0abf877073d7004128cb2ba440c597d9e",
     "https://scbau.github.io/training_module/polyfills-es2015.1f913f16a2d346cc8bdc.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "https://scbau.github.io/training_module/polyfills-es5.1a3c78b07cd6f16c6e9a.js": "e5472003c8575a8fca7583648df3905038faeb18",
     "https://scbau.github.io/training_module/runtime-es2015.0811dcefd377500b5b1a.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
