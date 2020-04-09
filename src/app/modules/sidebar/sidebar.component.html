@@ -25,10 +25,10 @@
           <mat-tree [dataSource]="dataSource" [treeControl]="treeControl" class="example-tree" style="margin: 20px;">
             <!-- This is the tree node template for leaf nodes -->
             <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle matTreeNodePadding>
-              <mat-nav-list>
-                <!-- <button mat-icon-button disabled></button> -->
-                <a mat-list-item [routerLink]="[node.route]">{{node.name}}</a>
-              </mat-nav-list>
+              <!-- <mat-nav-list [ngClass]="{'sidenavitem-selected': node.selected==true}"> -->
+                <button [ngClass]="{'sidenavitem-selected': node.selected==true}" mat-button (click)="changeRoute(node)">{{node.name}}</button>
+                <!-- <a mat-list-item [routerLink]="[node.route]">{{node.name}}</a> -->
+              <!-- </mat-nav-list> -->
               <!-- <li class="mat-tree-node"> -->
                 <!-- use a disabled button to provide padding for tree leaf -->
                 <!-- <button mat-icon-button disabled></button> -->
@@ -53,7 +53,10 @@
                         {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
                       </mat-icon>
                     </button>
-                    {{node.name}}
+
+                    <button mat-button matTreeNodeToggle [attr.aria-label]="'toggle ' + node.name">
+                      {{node.name}}
+                    </button>
                   </mat-nav-list>
                 </div>
                 <ul [class.example-tree-invisible]="!treeControl.isExpanded(node)">

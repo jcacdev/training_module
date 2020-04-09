@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
+import { ActivatedRoute, Router, NavigationStart } from '@angular/router';
 import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
 
 @Component({
@@ -7,19 +8,25 @@ import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
   styleUrls: ['./mainvideo.component.css']
 })
 export class MainVideoComponent implements OnInit {
+  public strURL = 'https://d3sxk9pu7edmci.cloudfront.net/';
 
-    public slides = [
-        { 'image': './assets/img/brochures/1/1.png' },
-        { 'image': './assets/img/brochures/1/2.png' },
-        { 'image': './assets/img/brochures/1/3.png' },
-        { 'image': './assets/img/brochures/1/4.png' },
-        { 'image': './assets/img/brochures/1/5.png' },
-        { 'image': './assets/img/brochures/1/6.png' }
-    ]
+    data;
 
-  constructor() { }
+    public src = "";
 
-  ngOnInit(): void {
-  }
+    constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
+    ngOnChanges(): void {
+        console.log('asdasdasdasdasdasd');
+    }
+
+    ngOnInit(): void {
+        this.activatedRoute.data.subscribe(v => this.data = v);
+        console.log(this.data);
+
+      this.src = this.strURL + this.data.path + "/" + this.data.filename;
+    }
 }
+
+
+// https://d3sxk9pu7edmci.cloudfront.net/Supercharge+M6+R5+fix+iPad+.mp4

@@ -19,7 +19,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'scb/automotive',
-            length: 6
+            length: 6,
+            title: 'Automotive Range'
         }
     },
     {
@@ -27,7 +28,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'scb/dual-purpose',
-            length: 4
+            length: 4,
+            title: 'Dual Purpose Range'
         }
     },
     {
@@ -35,7 +37,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'scb/golf-cart',
-            length: 4
+            length: 4,
+            title: 'Golf Cart Range'
         }
     },
     {
@@ -43,7 +46,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'scb/lawncare',
-            length: 4
+            length: 4,
+            title: 'Lawncare Range' 
         }
     },
     {
@@ -51,7 +55,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'scb/marine',
-            length: 4
+            length: 4,
+            title: 'Marine Range'
         }
     },
     {
@@ -59,7 +64,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'scb/start-stop',
-            length: 4
+            length: 4,
+            title: 'Start-Stop Range'
         }
     },
     {
@@ -67,7 +73,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'scb/truck',
-            length: 6
+            length: 6,
+            title: 'Truck Range'
         }
     },
     {
@@ -75,7 +82,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'scb/gladiator',
-            length: 4
+            length: 4,
+            title: 'Gladiator Range'
         }
     },
     {
@@ -83,7 +91,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'scb/amp-tech-flooded-deep-cycle',
-            length: 4
+            length: 4,
+            title: 'AMP-Tech Flooded Deep Cycle Range'
         }
     },
 
@@ -92,7 +101,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'exide/evolution-start-stop',
-            length: 4
+            length: 4,
+            title: 'Evolution Start-Stop Range'
         }
     },
     {
@@ -100,7 +110,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'exide/heavy-commercial',
-            length: 4
+            length: 4,
+            title: 'Heavy Commercial Range'
         }
     },
     {
@@ -108,7 +119,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'exide/industrial-cycling',
-            length: 4
+            length: 4,
+            title: 'Industrial Cycling Range'
         }
     },
     {
@@ -116,7 +128,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'exide/marine-stowaway',
-            length: 4
+            length: 4,
+            title: 'Marine Stowaway Range'
         }
     },
     {
@@ -124,7 +137,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'exide/passenger',
-            length: 4
+            length: 4,
+            title: 'Passenger'
         }
     },
     {
@@ -132,7 +146,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'exide/powerider',
-            length: 4
+            length: 4,
+            title: 'Powerider'
         }
     },
     {
@@ -140,7 +155,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'exide/suv-4wd-light',
-            length: 4
+            length: 4,
+            title: 'SUV 4WD Light Range'
         }
     },
 
@@ -149,7 +165,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'alco/automotive',
-            length: 4
+            length: 4,
+            title: 'Automotive Range'
         }
     },
     {
@@ -157,7 +174,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'alco/automotive-alco3000',
-            length: 2
+            length: 2,
+            title: 'Automotive Alco 3000 Range'
         }
     },
     {
@@ -165,7 +183,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'alco/dual-purpose',
-            length: 4
+            length: 4,
+            title: 'Dual Purpose Range'
         }
     },
     {
@@ -173,7 +192,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'alco/lawn-mower',
-            length: 4
+            length: 4,
+            title: 'Lawn Mower Range'
         }
     },
     {
@@ -181,7 +201,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'alco/marine',
-            length: 4
+            length: 4,
+            title: 'Marine Range'
         }
     },
     {
@@ -189,7 +210,8 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'alco/start-stop',
-            length: 4
+            length: 4,
+            title: 'Start-Stop Range'
         }
     },
     {
@@ -197,12 +219,65 @@ const routes: Routes = [
         component: MainviewComponent,
         data: {
             path: 'alco/truck',
-            length: 4
+            length: 4,
+            title: 'Truck Range'
+        }
+    },
+
+    // videos scb
+    {
+        path: 'videos/scb/m1',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/scb',
+            filename: 'Supercharge+M1+R5+fix+2+iPad.mp4',
+            title: 'SCB Module 1'
         }
     },
     {
-        path: 'video',
-        component: MainVideoComponent
+        path: 'videos/scb/m2',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/scb',
+            filename: 'Supercharge+M2+-+iPad+VERSION.mp4',
+            title: 'SCB Module 2'
+        }
+    },
+    {
+        path: 'videos/scb/m3',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/scb',
+            filename: 'Supercharge+M3+-+iPad+VERSION.mp4',
+            title: 'SCB Module 3'
+        }
+    },
+    {
+        path: 'videos/scb/m4',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/scb',
+            filename: 'Supercharge+M4+-+iPad+VERSION.mp4',
+            title: 'SCB Module 4'
+        }
+    },
+    {
+        path: 'videos/scb/m5',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/scb',
+            filename: 'Supercharge+M5+-+iPad+VERSION.mp4',
+            title: 'SCB Module 5'
+        }
+    },
+    {
+        path: 'videos/scb/m6',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/scb',
+            filename: 'Supercharge+M6+R5+fix+iPad.mp4',
+            title: 'SCB Module 6'
+        }
     }
 ];
 

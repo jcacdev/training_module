@@ -29,6 +29,14 @@ import { InMemoryDataListService } from './services/in-memory/in-memory-datalist
 
 import { PersistenceService } from './services/persistence/persistence.service';
 
+/*
+import { VgCoreModule } from 'videogular2/core';
+import { VgControlsModule } from 'videogular2/controls';
+import { VgOverlayPlayModule } from 'videogular2/overlay-play';
+import { VgBufferingModule } from 'videogular2/buffering';
+import { SingleMediaPlayer } from './single-media-player';
+*/
+
 @NgModule({
   declarations: [
     AppComponent,
