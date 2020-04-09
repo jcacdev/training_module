@@ -20,7 +20,8 @@ const routes: Routes = [
         data: {
             path: 'scb/automotive',
             length: 6,
-            title: 'Automotive Range'
+            title: 'Automotive Range',
+            id: 111
         }
     },
     {
@@ -29,7 +30,8 @@ const routes: Routes = [
         data: {
             path: 'scb/dual-purpose',
             length: 4,
-            title: 'Dual Purpose Range'
+            title: 'Dual Purpose Range',
+            id: 112
         }
     },
     {
@@ -38,7 +40,8 @@ const routes: Routes = [
         data: {
             path: 'scb/golf-cart',
             length: 4,
-            title: 'Golf Cart Range'
+            title: 'Golf Cart Range',
+            id: 113
         }
     },
     {
@@ -47,7 +50,8 @@ const routes: Routes = [
         data: {
             path: 'scb/lawncare',
             length: 4,
-            title: 'Lawncare Range' 
+            title: 'Lawncare Range',
+            id: 114
         }
     },
     {
@@ -56,7 +60,8 @@ const routes: Routes = [
         data: {
             path: 'scb/marine',
             length: 4,
-            title: 'Marine Range'
+            title: 'Marine Range',
+            id: 115
         }
     },
     {
@@ -65,7 +70,8 @@ const routes: Routes = [
         data: {
             path: 'scb/start-stop',
             length: 4,
-            title: 'Start-Stop Range'
+            title: 'Start-Stop Range',
+            id: 116
         }
     },
     {
@@ -74,7 +80,8 @@ const routes: Routes = [
         data: {
             path: 'scb/truck',
             length: 6,
-            title: 'Truck Range'
+            title: 'Truck Range',
+            id: 117
         }
     },
     {
@@ -83,7 +90,8 @@ const routes: Routes = [
         data: {
             path: 'scb/gladiator',
             length: 4,
-            title: 'Gladiator Range'
+            title: 'Gladiator Range',
+            id: 118
         }
     },
     {
@@ -92,7 +100,8 @@ const routes: Routes = [
         data: {
             path: 'scb/amp-tech-flooded-deep-cycle',
             length: 4,
-            title: 'AMP-Tech Flooded Deep Cycle Range'
+            title: 'AMP-Tech Flooded Deep Cycle Range',
+            id: 119
         }
     },
 
@@ -102,7 +111,8 @@ const routes: Routes = [
         data: {
             path: 'exide/evolution-start-stop',
             length: 4,
-            title: 'Evolution Start-Stop Range'
+            title: 'Evolution Start-Stop Range',
+            id: 211
         }
     },
     {
@@ -111,7 +121,8 @@ const routes: Routes = [
         data: {
             path: 'exide/heavy-commercial',
             length: 4,
-            title: 'Heavy Commercial Range'
+            title: 'Heavy Commercial Range',
+            id: 212
         }
     },
     {
@@ -120,7 +131,8 @@ const routes: Routes = [
         data: {
             path: 'exide/industrial-cycling',
             length: 4,
-            title: 'Industrial Cycling Range'
+            title: 'Industrial Cycling Range',
+            id: 213
         }
     },
     {
@@ -129,7 +141,8 @@ const routes: Routes = [
         data: {
             path: 'exide/marine-stowaway',
             length: 4,
-            title: 'Marine Stowaway Range'
+            title: 'Marine Stowaway Range',
+            id: 214
         }
     },
     {
@@ -138,7 +151,8 @@ const routes: Routes = [
         data: {
             path: 'exide/passenger',
             length: 4,
-            title: 'Passenger'
+            title: 'Passenger',
+            id: 215
         }
     },
     {
@@ -147,7 +161,8 @@ const routes: Routes = [
         data: {
             path: 'exide/powerider',
             length: 4,
-            title: 'Powerider'
+            title: 'Powerider',
+            id: 216
         }
     },
     {
@@ -156,7 +171,8 @@ const routes: Routes = [
         data: {
             path: 'exide/suv-4wd-light',
             length: 4,
-            title: 'SUV 4WD Light Range'
+            title: 'SUV 4WD Light Range',
+            id: 217
         }
     },
 
@@ -166,7 +182,8 @@ const routes: Routes = [
         data: {
             path: 'alco/automotive',
             length: 4,
-            title: 'Automotive Range'
+            title: 'Automotive Range',
+            id: 311
         }
     },
     {
@@ -175,7 +192,8 @@ const routes: Routes = [
         data: {
             path: 'alco/automotive-alco3000',
             length: 2,
-            title: 'Automotive Alco 3000 Range'
+            title: 'Automotive Alco 3000 Range',
+            id: 312
         }
     },
     {
@@ -184,7 +202,8 @@ const routes: Routes = [
         data: {
             path: 'alco/dual-purpose',
             length: 4,
-            title: 'Dual Purpose Range'
+            title: 'Dual Purpose Range',
+            id: 313
         }
     },
     {
@@ -193,7 +212,8 @@ const routes: Routes = [
         data: {
             path: 'alco/lawn-mower',
             length: 4,
-            title: 'Lawn Mower Range'
+            title: 'Lawn Mower Range',
+            id: 314
         }
     },
     {
@@ -202,7 +222,8 @@ const routes: Routes = [
         data: {
             path: 'alco/marine',
             length: 4,
-            title: 'Marine Range'
+            title: 'Marine Range',
+            id: 315
         }
     },
     {
@@ -211,7 +232,8 @@ const routes: Routes = [
         data: {
             path: 'alco/start-stop',
             length: 4,
-            title: 'Start-Stop Range'
+            title: 'Start-Stop Range',
+            id: 316
         }
     },
     {
@@ -220,7 +242,8 @@ const routes: Routes = [
         data: {
             path: 'alco/truck',
             length: 4,
-            title: 'Truck Range'
+            title: 'Truck Range',
+            id: 317
         }
     },
 
@@ -231,7 +254,8 @@ const routes: Routes = [
         data: {
             path: 'videos/scb',
             filename: 'Supercharge+M1+R5+fix+2+iPad.mp4',
-            title: 'SCB Module 1'
+            title: 'SCB Module 1',
+            id: 121
         }
     },
     {
@@ -240,7 +264,8 @@ const routes: Routes = [
         data: {
             path: 'videos/scb',
             filename: 'Supercharge+M2+-+iPad+VERSION.mp4',
-            title: 'SCB Module 2'
+            title: 'SCB Module 2',
+            id: 122
         }
     },
     {
@@ -249,7 +274,8 @@ const routes: Routes = [
         data: {
             path: 'videos/scb',
             filename: 'Supercharge+M3+-+iPad+VERSION.mp4',
-            title: 'SCB Module 3'
+            title: 'SCB Module 3',
+            id: 123
         }
     },
     {
@@ -258,7 +284,8 @@ const routes: Routes = [
         data: {
             path: 'videos/scb',
             filename: 'Supercharge+M4+-+iPad+VERSION.mp4',
-            title: 'SCB Module 4'
+            title: 'SCB Module 4',
+            id: 124
         }
     },
     {
@@ -267,7 +294,8 @@ const routes: Routes = [
         data: {
             path: 'videos/scb',
             filename: 'Supercharge+M5+-+iPad+VERSION.mp4',
-            title: 'SCB Module 5'
+            title: 'SCB Module 5',
+            id: 125
         }
     },
     {
@@ -276,7 +304,111 @@ const routes: Routes = [
         data: {
             path: 'videos/scb',
             filename: 'Supercharge+M6+R5+fix+iPad.mp4',
-            title: 'SCB Module 6'
+            title: 'SCB Module 6',
+            id: 126
+        }
+    },
+
+    // exide videos
+
+    {
+        path: 'videos/exide/m1',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/exide',
+            filename: 'Module A - What is a Battery FOR EXPORT-SD.mp4',
+            title: 'Exide Module A',
+            id: 221
+        }
+    },
+    {
+        path: 'videos/exide/m2',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/exide',
+            filename: 'Module B - Testing a Battery-SD.mp4',
+            title: 'Exide Module B',
+            id: 222
+        }
+    },
+    {
+        path: 'videos/exide/m3',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/exide',
+            filename: 'Module C - How to test a Battery using an electronic tester.mp4',
+            title: 'Exide Module C',
+            id: 223
+        }
+    },
+    {
+        path: 'videos/exide/m4',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/exide',
+            filename: 'Module D - Testing using a hydrometer & multimeter FOR EXPORT.mp4',
+            title: 'Exide Module D',
+            id: 224
+        }
+    },
+    {
+        path: 'videos/exide/m5',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/exide',
+            filename: 'Module D1 - How to Test a battery (Using a Hyrdrometer).mp4',
+            title: 'Exide Module D1',
+            id: 225
+        }
+    },
+    {
+        path: 'videos/exide/m6',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/exide',
+            filename: 'Module D2 - Testing a vehicles electrics (using a multimeter).mp4',
+            title: 'Exide Module D2',
+            id: 226
+        }
+    },
+    {
+        path: 'videos/exide/m7',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/exide',
+            filename: 'Module E - How to Charge a Battery FOR EXPORT-SD.mp4',
+            title: 'Exide Module E',
+            id: 227
+        }
+    },
+    {
+        path: 'videos/exide/m8',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/exide',
+            filename: 'Module F - How to Install a Battery.mp4',
+            title: 'Exide Module F',
+            id: 228
+        }
+    },
+    {
+        path: 'videos/exide/m9',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/exide',
+            filename: 'Module G - Managing Warranty.mp4',
+            title: 'Exide Module G',
+            id: 229
+        }
+    },
+    {
+        path: 'videos/exide/m10',
+        component: MainVideoComponent,
+        data: {
+            path: 'videos/exide',
+            filename: 'Module H-SD.mp4',
+            title: 'Exide Module H',
+            id: 2210
         }
     }
 ];

@@ -26,7 +26,7 @@
             <!-- This is the tree node template for leaf nodes -->
             <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle matTreeNodePadding>
               <!-- <mat-nav-list [ngClass]="{'sidenavitem-selected': node.selected==true}"> -->
-                <button [ngClass]="{'sidenavitem-selected': node.selected==true}" mat-button (click)="changeRoute(node)">{{node.name}}</button>
+                <button style="width: 100%; text-align: left!important;" [ngClass]="{'sidenavitem-selected': node.selected==true}" mat-button (click)="changeRoute(node)">{{node.name}}</button>
                 <!-- <a mat-list-item [routerLink]="[node.route]">{{node.name}}</a> -->
               <!-- </mat-nav-list> -->
               <!-- <li class="mat-tree-node"> -->

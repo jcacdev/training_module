@@ -1,5 +1,6 @@
 import { MediaMatcher } from '@angular/cdk/layout';
 import { ChangeDetectorRef, Component, OnInit, OnDestroy } from '@angular/core';
+import { ActivatedRoute, Router, NavigationStart } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
 
@@ -8,17 +9,17 @@ import { MatTreeNestedDataSource } from '@angular/material/tree';
 
 import { Hero } from '../../models/data';
 import { List } from '../../models/list';
-import { HeroService } from '../../services/data/data.services';
+// import { HeroService } from '../../services/data/data.services';
 
-import { Router } from '@angular/router';
-
+import { MessageService } from '../../services/message/message.service';
 
 interface FoodNode {
     id: number,
     name: string,
     children?: FoodNode[],
     route?: string,
-    selected?: boolean
+    selected?: boolean,
+    subname?: string
 }
 
 var TREE_DATA: FoodNode[] = [
@@ -28,7 +29,7 @@ var TREE_DATA: FoodNode[] = [
         "children": [
             {
                 "id": 11, "name": "Brochures", "children": [
-                    { "id": 111, "name": "Automotive Range", "selected": true, "route": "/scb/automotive" },
+                    { "id": 111, "name": "Automotive Range", "selected": false, "route": "/scb/automotive" },
                     { "id": 112, "name": "Dual Purpose Range", "selected": false, "route": "/scb/dual-purpose" },
                     { "id": 113, "name": "Golf Cart Range", "selected": false, "route": "/scb/golf-cart" },
                     { "id": 114, "name": "Lawncare Range", "selected": false, "route": "/scb/lawncare" },
@@ -63,16 +64,23 @@ var TREE_DATA: FoodNode[] = [
                     { "id": 214, "selected": false, "name": "Marine Stowaway Range", "route": "/exide/marine-stowaway" },
                     { "id": 215, "selected": false, "name": "Passenger Range", "route": "/exide/passenger" },
                     { "id": 216, "selected": false, "name": "Powerider Range", "route": "/exide/powerider" },
-                    { "id": 217, "selected": false, "name": "SUV 4WD Light Range", "route": "/exide/suv-4wd-light" },
-                    // { "id": 218, "name": "Gladiator Range", "route": "/scb/gladiator" }
+                    { "id": 217, "selected": false, "name": "SUV 4WD Light Range", "route": "/exide/suv-4wd-light" }
                 ]
-            }/*,
+            },
             {
-                "id": 22, "name": "Videos", "children": [
-                    { "id": 221, "name": "Supercharge M1 R5", "route": "/video" },
-                    { "id": 222, "name": "Supercharge M2", "route": "/video" }
+                "id": 12, "name": "Videos", "children": [
+                    { "id": 221, "name": "Module A - What is a Battery", "selected": false, "route": "/videos/exide/m1" },
+                    { "id": 222, "name": "Module B - Testing a Battery", "selected": false, "route": "/videos/exide/m2" },
+                    { "id": 223, "name": "Module C - Testing a Battery using an electronic tester", "selected": false, "route": "/videos/exide/m3" },
+                    { "id": 224, "name": "Module D - Testing using a hydrometer & multimeter", "selected": false, "route": "/videos/exide/m4" },
+                    { "id": 225, "name": "Module D1 - Testing a Battery using hydrometer", "selected": false, "route": "/videos/exide/m5" },
+                    { "id": 226, "name": "Module D2 - Testing a Battery using multimeter", "selected": false, "route": "/videos/exide/m6" },
+                    { "id": 227, "name": "Module E - How to Charge a Battery", "selected": false, "route": "/videos/exide/m7" },
+                    { "id": 228, "name": "Module F - How to Install a Battery", "selected": false, "route": "/videos/exide/m8" },
+                    { "id": 229, "name": "Module G - Managing Warranty", "selected": false, "route": "/videos/exide/m9" },
+                    { "id": 2210, "name": "Module H", "selected": false, "route": "/videos/exide/m10" }
                 ]
-            }*/
+            }
         ]
     },
     {
@@ -105,6 +113,7 @@ var currentNode: FoodNode = TREE_DATA[0].children[0].children[0];
 
 @Component({
     selector: 'app-sidebar',
+    providers: [MessageService],
     templateUrl: './sidebar.component.html',
     styleUrls: ['./sidebar.component.css']
 })
@@ -116,7 +125,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
 
     heroes: Hero[];
     panelOpenState = true;
-    navbarText = currentNode.name;
+    navbarText: string = "";
     mobileQuery: MediaQueryList;
     router: Router;
     /*fillerNav = [
@@ -146,11 +155,15 @@ export class SidebarComponent implements OnInit, OnDestroy {
 
 
 
-    fillerNav: List[];
+    // fillerNav: List[];
+
+    data;
+    message;
 
     constructor(
         private _router: Router,
-        private heroService: HeroService,
+        private activatedRoute: ActivatedRoute,
+        private messageService: MessageService,
         changeDetectorRef: ChangeDetectorRef, 
         media: MediaMatcher, 
         iconRegistry: MatIconRegistry, 
@@ -175,19 +188,37 @@ export class SidebarComponent implements OnInit, OnDestroy {
 
     ngOnInit() {
         // this.getHeroes();
-        this.getList();
+        this.messageService.currentMessage.subscribe(message => { this.navbarText = message; console.log(message); });
+
+        this.navbarText = this.data.title;
+
+        console.log(this.data);
+        var currentNodeID = this.data.id.toString();
+
+        var tempElem = currentNodeID.charAt(0);
+        currentNodeID = currentNodeID.slice(1);
+        var firstElem = parseInt(tempElem) - 1;
+
+        tempElem = currentNodeID.charAt(0);
+        currentNodeID = currentNodeID.slice(1);
+        var secondElem = parseInt(tempElem) - 1;
+        var thirdElem = parseInt(currentNodeID) - 1;
+        // this.getList();
+
+        currentNode = TREE_DATA[firstElem].children[secondElem].children[thirdElem];
+        console.log(currentNode);
     }
 
-    getList(): void {
+    /*getList(): void {
         console.log('test');
         this.heroService.getList()
             .subscribe(list => this.fillerNav = list);
-    }
+    }*/
 
-    getHeroes(): void {
+    /*getHeroes(): void {
         this.heroService.getHeroes()
             .subscribe(heroes => this.heroes = heroes);
-    }
+    }*/
 
     ngOnDestroy(): void {
         this.mobileQuery.removeListener(this._mobileQueryListener);
@@ -223,5 +254,9 @@ export class SidebarComponent implements OnInit, OnDestroy {
         currentNode.selected = true;
 
         this.router.navigateByUrl(node.route);
+    }
+
+    public setTitle(text: string): void {
+        this.navbarText = text;
     }
 }
