@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1586929929526,
+  "timestamp": 1586931169672,
   "index": "https://scbau.github.io/training_module/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "https://scbau.github.io/training_module/favicon.ico",
         "https://scbau.github.io/training_module/index.html",
-        "https://scbau.github.io/training_module/main-es2015.673852f2773b0efa8d39.js",
-        "https://scbau.github.io/training_module/main-es5.673852f2773b0efa8d39.js",
+        "https://scbau.github.io/training_module/main-es2015.3b67fda2360fef62e227.js",
+        "https://scbau.github.io/training_module/main-es5.3b67fda2360fef62e227.js",
         "https://scbau.github.io/training_module/manifest.webmanifest",
         "https://scbau.github.io/training_module/pdfjsWorker-es2015.1157da343478c8cd748e.js",
         "https://scbau.github.io/training_module/pdfjsWorker-es5.1157da343478c8cd748e.js",
@@ -103,9 +103,9 @@
     "https://scbau.github.io/training_module/assets/pdf/scb/start-stop.pdf": "c042907a16161704ae37076c596d2f4d83990ffd",
     "https://scbau.github.io/training_module/assets/pdf/scb/truck.pdf": "6240bebdec85cfa74019802e150f891237087241",
     "https://scbau.github.io/training_module/favicon.ico": "975344788afa755c58e085cea9a323e156f5e6e7",
-    "https://scbau.github.io/training_module/index.html": "1ccef4f16724036b06070578056bdbcab5545d7a",
-    "https://scbau.github.io/training_module/main-es2015.673852f2773b0efa8d39.js": "eb6072c4325261169a3a332342e2d899d2b4c794",
-    "https://scbau.github.io/training_module/main-es5.673852f2773b0efa8d39.js": "6625e44316bb0503d0f7f967b5f727ae1427949c",
+    "https://scbau.github.io/training_module/index.html": "8bc513c727abcee0fed51a401e7c16707c0688b4",
+    "https://scbau.github.io/training_module/main-es2015.3b67fda2360fef62e227.js": "d16f96eba2536c659c6aaa7423514f4a9d919bfb",
+    "https://scbau.github.io/training_module/main-es5.3b67fda2360fef62e227.js": "5036387d76603b2ab03861d8a3b32b37f68ea3fe",
     "https://scbau.github.io/training_module/manifest.webmanifest": "b652bad0abf877073d7004128cb2ba440c597d9e",
     "https://scbau.github.io/training_module/pdfjsWorker-es2015.1157da343478c8cd748e.js": "10432c330ada9f2d223483c01e31fd83ff67a58e",
     "https://scbau.github.io/training_module/pdfjsWorker-es5.1157da343478c8cd748e.js": "a7601a0c2044750de4be5dd70d9744c1ea66a2c7",
