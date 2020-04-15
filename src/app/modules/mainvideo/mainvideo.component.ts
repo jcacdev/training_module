@@ -24,7 +24,7 @@ export class MainVideoComponent implements OnInit {
         this.activatedRoute.data.subscribe(v => this.data = v);
         console.log(this.data);
 
-      this.src = this.strURL + this.data.path + "/" + this.data.filename;
+        this.src = this.strURL + this.data.path + "/" + this.data.filename + "?ngsw-bypass=true";
     }
 }
 
