@@ -32,14 +32,6 @@ import { PersistenceService } from './services/persistence/persistence.service';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
-/*
-import { VgCoreModule } from 'videogular2/core';
-import { VgControlsModule } from 'videogular2/controls';
-import { VgOverlayPlayModule } from 'videogular2/overlay-play';
-import { VgBufferingModule } from 'videogular2/buffering';
-import { SingleMediaPlayer } from './single-media-player';
-*/
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,12 +41,12 @@ import { SingleMediaPlayer } from './single-media-player';
   imports: [
     BrowserModule,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(
+    /*HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
     ),
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataListService, { dataEncapsulation: false }
-    ),
+    ),*/
     AppRoutingModule,
     MaterialModule,
     MatCarouselModule.forRoot(),
