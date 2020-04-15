@@ -19,6 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/material.module';
 
 import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+
 
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 
@@ -30,17 +32,20 @@ import { InMemoryDataListService } from './services/in-memory/in-memory-datalist
 import { PersistenceService } from './services/persistence/persistence.service';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { DownloadComponent } from './modules/download/download.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    MainviewComponent
+    MainviewComponent,
+    DownloadComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    HttpModule,
     /*HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
     ),

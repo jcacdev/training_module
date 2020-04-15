@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MainviewComponent } from './modules/mainview/mainview.component';
 import { MainVideoComponent } from './modules/mainvideo/mainvideo.component';
+import { DownloadComponent } from './modules/download/download.component';
 
 
 const routes: Routes = [
-    /*{
-        path: '',
-        component: MainviewComponent,
-    },*/
+    {
+        path: 'download',
+        component: DownloadComponent,
+    },
     {
         path: '',
         redirectTo: 'scb/automotive',
