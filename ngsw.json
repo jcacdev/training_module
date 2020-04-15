@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1586935673371,
+  "timestamp": 1586993764101,
   "index": "https://scbau.github.io/training_module/index.html",
   "assetGroups": [
     {
@@ -19,7 +19,7 @@
         "https://scbau.github.io/training_module/polyfills-es5.9b4e5f6a61cb29d9f1b8.js",
         "https://scbau.github.io/training_module/runtime-es2015.6f3cc9c412d2a7560480.js",
         "https://scbau.github.io/training_module/runtime-es5.6f3cc9c412d2a7560480.js",
-        "https://scbau.github.io/training_module/styles.a08ea0d16362e0e7cc1d.css"
+        "https://scbau.github.io/training_module/styles.2c04b38368704ec455a7.css"
       ],
       "patterns": []
     },
@@ -59,11 +59,7 @@
         "https://scbau.github.io/training_module/assets/pdf/scb/lawncare.pdf",
         "https://scbau.github.io/training_module/assets/pdf/scb/marine.pdf",
         "https://scbau.github.io/training_module/assets/pdf/scb/start-stop.pdf",
-        "https://scbau.github.io/training_module/assets/pdf/scb/truck.pdf",
-        "https://scbau.github.io/training_module/videogular.0b8f5ffeb073ed30e02a.woff",
-        "https://scbau.github.io/training_module/videogular.535a6d96e96b8bc4549f.eot",
-        "https://scbau.github.io/training_module/videogular.ab020f4923f88c9e6b00.ttf",
-        "https://scbau.github.io/training_module/videogular.d4f9c9f4aca582e94b2a.svg"
+        "https://scbau.github.io/training_module/assets/pdf/scb/truck.pdf"
       ],
       "patterns": []
     }
@@ -115,7 +111,7 @@
     "https://scbau.github.io/training_module/assets/pdf/scb/start-stop.pdf": "c042907a16161704ae37076c596d2f4d83990ffd",
     "https://scbau.github.io/training_module/assets/pdf/scb/truck.pdf": "6240bebdec85cfa74019802e150f891237087241",
     "https://scbau.github.io/training_module/favicon.ico": "975344788afa755c58e085cea9a323e156f5e6e7",
-    "https://scbau.github.io/training_module/index.html": "14841e42ce308af4602de80d89b4d13bab697dcc",
+    "https://scbau.github.io/training_module/index.html": "7e98cc570ddd4770a0788862a37652e015ec032f",
     "https://scbau.github.io/training_module/main-es2015.a1d02e24df53540b51e8.js": "0281a2367e82c7b3f81ede13ebabae6335fcbc7e",
     "https://scbau.github.io/training_module/main-es5.a1d02e24df53540b51e8.js": "5dae6ad7e55d60c9bbf583e2411740894f1b7761",
     "https://scbau.github.io/training_module/manifest.webmanifest": "b652bad0abf877073d7004128cb2ba440c597d9e",
@@ -125,11 +121,7 @@
     "https://scbau.github.io/training_module/polyfills-es5.9b4e5f6a61cb29d9f1b8.js": "f2a140e14c5a29b244aef2d4861511244bf15bb4",
     "https://scbau.github.io/training_module/runtime-es2015.6f3cc9c412d2a7560480.js": "2eb72c096bfdf30759b4167fde15b4574ff06b46",
     "https://scbau.github.io/training_module/runtime-es5.6f3cc9c412d2a7560480.js": "17c7a5dae094eea78a23a96435422ae95baf3d06",
-    "https://scbau.github.io/training_module/styles.a08ea0d16362e0e7cc1d.css": "a4fdd5a2a468797a76d561673f5daed9723a8179",
-    "https://scbau.github.io/training_module/videogular.0b8f5ffeb073ed30e02a.woff": "0e25c781426255dc473162ae7cd0fab5a5a721a4",
-    "https://scbau.github.io/training_module/videogular.535a6d96e96b8bc4549f.eot": "5c324417e11c52e00f8293fa2a120fe3f63f5d25",
-    "https://scbau.github.io/training_module/videogular.ab020f4923f88c9e6b00.ttf": "bb67bb29f92837ac5e2ea0bfd9fa689ad15fb887",
-    "https://scbau.github.io/training_module/videogular.d4f9c9f4aca582e94b2a.svg": "5f425e191f26e38cc784ef48eafebdb6d2b070db"
+    "https://scbau.github.io/training_module/styles.2c04b38368704ec455a7.css": "0a5d4206b6f332ea7c0b6345c4cbe8657fcd862e"
   },
   "navigationUrls": [
     {
