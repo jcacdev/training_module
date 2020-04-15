@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1586934088027,
+  "timestamp": 1586934741549,
   "index": "https://scbau.github.io/training_module/index.html",
   "assetGroups": [
     {
@@ -78,9 +78,8 @@
         "https:\\/\\/d3sxk9pu7edmci\\.cloudfront\\.net\\/videos\\/scb\\/[^/]*\\.mp4"
       ],
       "strategy": "freshness",
-      "maxSize": 100,
-      "maxAge": 3600000,
-      "timeoutMs": 10000,
+      "maxSize": 0,
+      "maxAge": 0,
       "version": 1
     }
   ],
