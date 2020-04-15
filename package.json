@@ -34,6 +34,7 @@
     "angular-in-memory-web-api": "^0.10.0",
     "aws-sdk": "^2.651.0",
     "idb": "^5.0.2",
+    "ng2-pdf-viewer": "^6.2.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "typescript": "~3.7.5",

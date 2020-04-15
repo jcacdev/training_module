@@ -20,3 +20,11 @@ li.carousel-slide {
     padding-bottom: 0%!important;
     height: 100%!important;
 }
+
+/*div.page, div.canvasWrapper, div.textLayer {
+    width:100%!important;
+}
+
+div.canvasWrapper > canvas {
+    width: 100%!important;
+}*/

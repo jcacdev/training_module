@@ -29,6 +29,9 @@ import { InMemoryDataListService } from './services/in-memory/in-memory-datalist
 
 import { PersistenceService } from './services/persistence/persistence.service';
 
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
+
 /*
 import { VgCoreModule } from 'videogular2/core';
 import { VgControlsModule } from 'videogular2/controls';
@@ -56,7 +59,8 @@ import { SingleMediaPlayer } from './single-media-player';
     MaterialModule,
     MatCarouselModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    PdfViewerModule
   ],
   providers: [{
     provide: APP_INITIALIZER,

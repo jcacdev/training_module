@@ -316,7 +316,7 @@ const routes: Routes = [
         component: MainVideoComponent,
         data: {
             path: 'videos/exide',
-            filename: 'Module A - What is a Battery FOR EXPORT-SD.mp4',
+            filename: 'Module+A+-+What+is+a+Battery+FOR+EXPORT-SD.mp4',
             title: 'Exide Module A',
             id: 221
         }
@@ -326,7 +326,7 @@ const routes: Routes = [
         component: MainVideoComponent,
         data: {
             path: 'videos/exide',
-            filename: 'Module B - Testing a Battery-SD.mp4',
+            filename: 'Module+B+-+Testing+a+Battery-SD.mp4',
             title: 'Exide Module B',
             id: 222
         }
@@ -336,7 +336,7 @@ const routes: Routes = [
         component: MainVideoComponent,
         data: {
             path: 'videos/exide',
-            filename: 'Module C - How to test a Battery using an electronic tester.mp4',
+            filename: 'Module+C+-+How+to+test+a+Battery+using+an+electronic+tester.mp4',
             title: 'Exide Module C',
             id: 223
         }
@@ -346,7 +346,7 @@ const routes: Routes = [
         component: MainVideoComponent,
         data: {
             path: 'videos/exide',
-            filename: 'Module D - Testing using a hydrometer & multimeter FOR EXPORT.mp4',
+            filename: 'Module+D+-+Testing+using+a+hydrometer+&+multimeter+FOR+EXPORT.mp4',
             title: 'Exide Module D',
             id: 224
         }
@@ -356,7 +356,7 @@ const routes: Routes = [
         component: MainVideoComponent,
         data: {
             path: 'videos/exide',
-            filename: 'Module D1 - How to Test a battery (Using a Hyrdrometer).mp4',
+            filename: 'Module+D1+-+How+to+Test+a+battery+(Using+a+Hyrdrometer).mp4',
             title: 'Exide Module D1',
             id: 225
         }
@@ -366,7 +366,7 @@ const routes: Routes = [
         component: MainVideoComponent,
         data: {
             path: 'videos/exide',
-            filename: 'Module D2 - Testing a vehicles electrics (using a multimeter).mp4',
+            filename: 'Module+D2+-+Testing+a+vehicles+electrics+(using+a+multimeter).mp4',
             title: 'Exide Module D2',
             id: 226
         }
@@ -376,7 +376,7 @@ const routes: Routes = [
         component: MainVideoComponent,
         data: {
             path: 'videos/exide',
-            filename: 'Module E - How to Charge a Battery FOR EXPORT-SD.mp4',
+            filename: 'Module+E+-+How+to+charge+a+Battery+FOR+EXPORT-SD.mp4',
             title: 'Exide Module E',
             id: 227
         }
@@ -386,7 +386,7 @@ const routes: Routes = [
         component: MainVideoComponent,
         data: {
             path: 'videos/exide',
-            filename: 'Module F - How to Install a Battery.mp4',
+            filename: 'Module+F+-+How+to+Install+a+Battery.mp4',
             title: 'Exide Module F',
             id: 228
         }
@@ -396,7 +396,7 @@ const routes: Routes = [
         component: MainVideoComponent,
         data: {
             path: 'videos/exide',
-            filename: 'Module G - Managing Warranty.mp4',
+            filename: 'Module+G+-+Managing+Warranty.mp4',
             title: 'Exide Module G',
             id: 229
         }
@@ -406,7 +406,7 @@ const routes: Routes = [
         component: MainVideoComponent,
         data: {
             path: 'videos/exide',
-            filename: 'Module H-SD.mp4',
+            filename: 'Module+H-SD.mp4',
             title: 'Exide Module H',
             id: 2210
         }

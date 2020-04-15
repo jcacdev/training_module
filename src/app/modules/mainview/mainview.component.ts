@@ -12,6 +12,9 @@ import { MessageService } from '../../services/message/message.service';
   styleUrls: ['./mainview.component.css']
 })
 export class MainviewComponent implements OnInit {
+
+  public pdfSrc = "../assets/pdf/scb/automotive.pdf";
+
   data;
 
   message: string;
@@ -31,15 +34,19 @@ export class MainviewComponent implements OnInit {
     
     console.log(this.data);
 
-      this.messageService.changeMessage(this.data.title);
+    this.messageService.changeMessage(this.data.title);
 
-    var x = new Array(this.data.length);
+    this.pdfSrc = '../assets/pdf/' + this.data.path + '.pdf';
+    console.log(this.pdfSrc);
+
+    // uncomment to use carousel for slides
+    /*var x = new Array(this.data.length);
 
     for (var i = 0; i < this.data.length; i++) {
       x[i] = { 'image':'./assets/img/brochures/' + this.data.path + '/' + (i+1).toString() + '.png' }
     }
 
-    this.slides = x;
+    this.slides = x;*/
   }
 
 }
